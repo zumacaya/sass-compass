@@ -2,6 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -69,12 +70,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/modules/_layouts.scss */
 .wrapper {
-  width: 1200px;
+  max-width: 1200px;
 }
 
 /* line 4, ../sass/modules/_layouts.scss */
 .row,
-.columns {
+.column {
   box-sizing: border-box;
 }
 
@@ -105,4 +106,145 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 24, ../sass/modules/_layouts.scss */
 .col-33 {
   width: 33%;
+}
+
+/*Strip the ul of padding and list styling*/
+/* line 2, ../sass/modules/nav.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+  background: #2ecd71;
+  margin-bottom: 20px;
+}
+
+/*Create a horizontal list with spacing*/
+/* line 13, ../sass/modules/nav.scss */
+li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
+  border-left: 1px solid;
+  border-left-color: white;
+}
+
+/*Style for menu links*/
+/* line 23, ../sass/modules/nav.scss */
+li a {
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: #2ecd71;
+  text-decoration: none;
+}
+
+/*Hover state for top level links*/
+/* line 36, ../sass/modules/nav.scss */
+li:hover a {
+  background: #19c589;
+}
+
+/*Style for dropdown links*/
+/* line 41, ../sass/modules/nav.scss */
+li:hover ul a {
+  background: #f3f3f3;
+  color: #2f3036;
+  height: 40px;
+  line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+/* line 49, ../sass/modules/nav.scss */
+li:hover ul a:hover {
+  background: #19c589;
+  color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+/* line 55, ../sass/modules/nav.scss */
+li ul {
+  display: none;
+}
+
+/*Make dropdown links vertical*/
+/* line 60, ../sass/modules/nav.scss */
+li ul li {
+  display: block;
+  float: none;
+}
+
+/*Prevent text wrapping*/
+/* line 66, ../sass/modules/nav.scss */
+li ul li a {
+  width: auto;
+  min-width: 100px;
+  padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+/* line 73, ../sass/modules/nav.scss */
+ul li a:hover + .hidden, .hidden:hover {
+  display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+/* line 78, ../sass/modules/nav.scss */
+.show-menu {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background: #19c589;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+/*Hide checkbox*/
+/* line 89, ../sass/modules/nav.scss */
+input[type=checkbox] {
+  display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+/* line 94, ../sass/modules/nav.scss */
+input[type=checkbox]:checked ~ #menu {
+  display: block;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width: 760px) {
+  /*Make dropdown links appear inline*/
+  /* line 103, ../sass/modules/nav.scss */
+  ul {
+    position: static;
+    display: none;
+  }
+
+  /*Create vertical spacing*/
+  /* line 108, ../sass/modules/nav.scss */
+  li {
+    margin-bottom: 1px;
+  }
+
+  /*Make all menu links full width*/
+  /* line 112, ../sass/modules/nav.scss */
+  ul li, li a {
+    width: 100%;
+  }
+
+  /*Display 'show menu' link*/
+  /* line 116, ../sass/modules/nav.scss */
+  .show-menu {
+    display: block;
+  }
+}
+/* line 3, ../sass/modules/_fontsIconsButtons.scss */
+body {
+  font-family: 'Montserrat', sans-serif;
 }

@@ -1,8 +1,8 @@
 .wrapper{
-    width: $max-width;   
+    max-width: $max-width;   
 }
 .row, 
-.columns{
+.column{
     box-sizing: border-box;
 }
 .row:before,
