@@ -66,3 +66,43 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 1, ../sass/modules/_layouts.scss */
+.wrapper {
+  width: 1200px;
+}
+
+/* line 4, ../sass/modules/_layouts.scss */
+.row,
+.columns {
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/modules/_layouts.scss */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+
+/* line 13, ../sass/modules/_layouts.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 16, ../sass/modules/_layouts.scss */
+.column {
+  position: relative;
+  float: left;
+  color: red;
+}
+
+/* line 21, ../sass/modules/_layouts.scss */
+.column + .column {
+  padding: 0 0px;
+}
+
+/* line 24, ../sass/modules/_layouts.scss */
+.col-33 {
+  width: 33%;
+}
