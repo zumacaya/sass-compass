@@ -1,0 +1,160 @@
+.product,.product-img {
+width:98%;
+margin-left:1%;
+margin-right:1%;
+height:260px;
+position:relative;
+transition:.7s;
+-webkit-transition:.7s;
+z-index:2;
+}
+
+.product-big,.product-img-big {
+height:360px;
+}
+
+.product-actions {
+width:98%;
+margin-left:1%;
+margin-right:1%;
+height:260px;
+position:relative;
+overflow:hidden;
+margin-top:-263px;
+transition:.7s;
+-webkit-transition:.7s;
+z-index:2;
+}
+
+.product {
+-webkit-box-shadow:-2px 3px 2px rgba(0,0,0,0.5);
+box-shadow:-2px 3px 2px rgba(0,0,0,0.5);
+margin:20px auto;
+}
+
+.info-block,.product-title,.product-description,.product-sale,.button-buy,.more,.nav,.add {
+position:absolute;
+z-index:3;
+}
+
+.info-block {
+height:130px;
+width:98%;
+margin-left:1%;
+margin-right:1%;
+background:rgba(255,255,255,.85);
+bottom:0;
+margin-bottom:-70px;
+transition:.7s;
+}
+
+.product-title {
+color:#222;
+font-size:1em;
+font-weight:400;
+top:12px;
+left:15px;
+}
+
+.product-description {
+width:228px;
+top:32px;
+left:16px;
+font-family:'helvetica neue';
+font-size:.8em;
+font-weight:400;
+color:#7d7d7d;
+border-bottom:1px solid #dadada;
+padding-bottom:15px;
+}
+
+.product-sale {
+color:#e74c3c;
+font-size:1em;
+font-weight:700;
+font-family:'helvetica neue';
+right:15px;
+top:12px;
+}
+
+.button-buy {
+background:#e74c3c;
+text-align:center;
+line-height:46px;
+font-weight:700;
+color:#fff;
+border:0 solid #c0392b;
+border-bottom-width:2px;
+width:170px;
+height:44px;
+bottom:15px;
+left:15px;
+cursor:pointer;
+transition:.4s;
+}
+
+.button-buy:hover {
+background:#c0392b;
+}
+
+.add {
+background:#2ecc71;
+text-align:center;
+line-height:46px;
+font-weight:700;
+color:#fff;
+border:0 solid #27ae60;
+border-bottom-width:2px;
+width:50px;
+height:44px;
+bottom:15px;
+right:15px;
+cursor:pointer;
+transition:.4s;
+}
+
+.add:hover {
+background:#27ae60;
+}
+
+.nav {
+background:#4f4f4f;
+height:250px;
+margin-left:0;
+top:5px;
+width:250px;
+z-index:-4;
+font-weight:700;
+color:#fff;
+font-size:12px;
+transition:.4s ease-out .1s;
+}
+
+.nav ul li {
+width:50px;
+background:#333;
+border-bottom:1px solid #444;
+cursor:pointer;
+list-style:none;
+padding:13px 10px;
+}
+
+.nav ul {
+margin-left:-35px;
+}
+
+.nav ul li:hover {
+background:#222;
+}
+
+.nav:hover {
+margin-left:-80px;
+}
+
+.product:hover .info-block,.nav:hover .info-block {
+margin-bottom:0;
+}
+
+.product:hover input[name="play"] + label span,.product:hover .more {
+opacity:1;
+}

@@ -1,5 +1,42 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+font-family:Montserrat, sans-serif;
+}
+
+h1 {
+font-size:3em;
+padding-bottom:1em;
+text-align:center;
+}
+
+h2 {
+font-size:1.5em;
+padding-bottom:.5em;
+text-align:center;
+}
+
+@media (max-width: 768px){
+h1 {
+font-size:2em;
+padding-bottom:.75em;
+}
+
+h2 {
+font-size:1.2em;
+padding-bottom:.4em;
+}
+}
+
+@media (max-width: 480px){
+h1 {
+font-size:1.3em;
+padding-bottom:.6em;
+}
+
+h2 {
+font-size:1.1em;
+padding-bottom:.3em;
+}
 }
